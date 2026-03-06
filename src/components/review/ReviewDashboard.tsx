@@ -44,7 +44,6 @@ import type {
   FindingSeverity,
   FindingStatus,
 } from "@/lib/types";
-import type { SectionChecklistItem } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/lib/toast-context";
 import ExportReport from "./ExportReport";
