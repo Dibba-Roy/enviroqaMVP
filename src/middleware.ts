@@ -5,7 +5,7 @@ export function middleware(req: NextRequest) {
   const auth = req.headers.get("authorization");
 
   if (auth) {
-    const [scheme, encoded] = auth.split(" ");
+    const [, encoded] = auth.split(" ");
     const decoded = Buffer.from(encoded, "base64").toString();
     const [, password] = decoded.split(":");
 
